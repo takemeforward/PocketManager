@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyExpenses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="heading">Pocket buddget Manager</h1>
+    <form class="box" action="/" method="post">
+        
+        <input type="text" name="newItem" placeholder="ex: Coffiee">
+        <input type="text" name="cost" placeholder="Cost in Rs">
+        <button type="submit">add</button>
+    </form>
+       <% for(var i = 0; i<newListItem.length; i++){ %>
+        <div class="items">
+            <p>Item<%= i+1 %>: <%= newListItem[i].newItem %></p>
+            <p>Cost: <%= newListItem[i].cost %></p>
+        </div>
+        <% } %> 
+        
+        <div class="total items">
+            <p >Total monthly Expense = <%= monthlyExpense %></p>
+        </div>
+</body>
+</html>
