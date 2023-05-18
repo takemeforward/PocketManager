@@ -22,6 +22,10 @@ app.post("/",(req, res)=>{
     res.redirect("/");
 })
 
+app.get("/about",(req, res)=>{
+    res.render("about");
+})
+
 app.listen(3000,()=>{
     console.log("Server is running on port 3000");
 })

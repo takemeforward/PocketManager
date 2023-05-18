@@ -29,7 +29,7 @@ p{
   width: 80%;
   max-width: 400px;
   margin: 2% auto;
-  padding: 4%;
+  padding: 4% 2%;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@ input{
   outline: 1px solid var(--primary-color);
   background-color: rgb(255, 255, 255);
   display: block;
-  width: 80%;
+  width: 90%;
   margin: 16px auto;
 }
 input:hover, input:focus{
